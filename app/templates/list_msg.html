@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+	
+	<br/>
+	<br/>
+	{% for message in messages%}
+	<div class="message">
+		<p><b>TiTle</b>: {{ message[1] }}</p>
+		<p><b>Message</b>: {{ message[2] }}</p>
+		<p><b>Posted by</b>: {{ message[4] }}</p>
+	</div>
+	{% endfor %}
+{% endblock %}

@@ -1,0 +1,21 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+	
+	<br/>
+	<br/>
+	<form action="/message/add" method="POST" name="create-message">
+		<table>		
+			<tr><td>Title</td><td><input type="text" name="title"></td></tr>			
+			<tr><td>Message</td><td><textarea name="message"></textarea></td></tr>
+			<tr><td></td><td><input type="submit" name="submit" value="Submit"></td></tr>
+		</table>
+	</form>
+	{% if error %}
+		<p class="error"><strong>Error: </strong> {{ error }}
+	{% elif success %}
+		<p class="msg"><strong>Success: </strong> Message with title <i>{{ title }}</i> added
+	{% endif %}
+
+{% endblock %}

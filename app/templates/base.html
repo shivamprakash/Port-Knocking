@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<title>SVA - Assignment 2</title>
+  <style type="text/css">
+    ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+
+}
+
+li {
+  float: left;
+}
+
+a:link, a:visited {
+  display: block;
+  width: 220px;
+  font-weight: bold;
+  color: #FFFFFF;
+  background-color: black;
+  text-align: center;
+  padding: 4px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+a:hover, a:active {
+  background-color: blue;
+}
+  </style>
+</head>
+<body>
+  {% if session['username'] %}
+  <div class="navbar">
+    <ul>
+      <li><a href="/user/login">Login</a></li>
+      <li><a href="/user/register">Register</a></li>
+      <li><a href="/message/add">Add Message</a></li>
+      <li><a href="/message/list">Message List</a></li>
+      <li><a href="/user/logout">Logout</a></li>
+    </ul>
+  </div>
+  {% endif %}
+
+	<div class="container">
+		{% block content %}
+		{% endblock %}
+	</div>
+</body>
+</html>
