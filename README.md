@@ -33,11 +33,12 @@ Steps to run application:
 2) Download and install virtualenv
 3) activate the virtualenv for the downloaded repo by 
 . venv/bin/activate
+4) Change the path to db in app/views.py
 4)Now run views.py inside app folder
 5) App should be running by now. 
 
 
-Change the path to db in app/views.py
+
 
 
 
