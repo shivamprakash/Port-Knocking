@@ -1,4 +1,5 @@
-# Port-Knocking A port knocking application build on Flask. 
+# Port-Knocking 
+A port knocking application build on Flask. 
 
 
 This was an assignment given Prof Doupe for his class CSE 591- Security and
