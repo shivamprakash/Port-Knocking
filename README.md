@@ -1,5 +1,7 @@
-# Port-Knocking A port knocking application build on Flask. This was
-an assignment given Prof Doupe for his class CSE 591- Security and
+# Port-Knocking A port knocking application build on Flask. 
+
+
+This was an assignment given Prof Doupe for his class CSE 591- Security and
 vulnerabilty analysis. 
 The numbers assigned to pages are as follows:
 [
